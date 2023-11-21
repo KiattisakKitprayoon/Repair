@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ระบบแจ้งซ่อม</title>
+    <!-- Css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Niramit&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="data:image/png;base64,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"
+      type="image/png"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar">
+        <a href="index.html" class="nav-branding">ระบบแจ้งซ่อม</a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">หน้าแรก</a>
+          </li>
+          <li class="nav-item">
+            <a href="repair.html" class="nav-link">แจ้งซ่อม</a>
+          </li>
+          <li class="nav-item">
+            <a href="repairmc.html" class="nav-link">ปิดงานแจ้งซ่อม</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">ติดตามสถานะ</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <!-- hero -->
+    <div class="hero">
+      <div class="hero-detail">
+        <div class="hero-item">
+          <h2>ยินดีต้อนรับสู่เว็บไซต์</h2>
+          <p>
+            สวัสดีผู้เข้าใช้งานทุกท่าน เว็บไซต์ของเราจัดทำขึ้นด้วยวัตถุประสงค์
+            เพื่อแจ้งซ่อม ปิดงานแจ้งซ่อม และ ติดตามสถานะการแจ้งซ่อม เท่านั้น
+            หากท่านพบปัญหาในการใช้งานกรุณาติดต่อที่ผู้พัฒนา ได้ที่
+            <b style="color: #00adb5">Tel. 095-926-6381</b> หรือ
+            ท่านสามารถติดต่อได้ที่ฝ่ายผลิตชั้นบน
+          </p>
+          <!-- <div class="btn-hero">
+            <a href="#">ติดต่อผู้พัฒนา</a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Main -->
+    <section class="main">
+      <div class="container">
+        <div class="grid">
+          <div class="grid-item">
+            <div class="img-con">
+              <img src="./img/box1.png" alt="" />
+            </div>
+            <h3>ระบบแจ้งซ่อม</h3>
+            <p>
+              ท่านสามารถแจ้งปัญหาและชื่อของท่านเพื่อให้ทีมช่างของเราเข้าช่วยเหลือคุณ
+            </p>
+            <div class="btn">
+              <a href="repair.html">ดำเนินการ</a>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="img-con">
+              <img src="./img/box2.png" alt="" />
+            </div>
+            <h3>ระบบปิดงานแจ้งซ่อม</h3>
+            <p>
+              ท่านสามารถแจ้งปิดงานแจ้งซ่อมของท่าน
+              เพื่อให้หัวหน้าของท่านเข้าตรวจผลการซ่อมแซม
+            </p>
+            <div class="btn">
+              <a href="repairmc.html">ดำเนินการ</a>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="img-con">
+              <img src="./img/box3.png" alt="" />
+            </div>
+            <h3>ติดตามสถานะซ่อม</h3>
+            <p>ท่านสามารถติดตามสถานะผลการแจ้งซ่อมและสามารถดูรายการแจ้งซ่อม</p>
+            <div class="btn">
+              <a href="#">ดำเนินการ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>Copyright © 2023 Kiattisak. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
